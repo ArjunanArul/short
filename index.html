@@ -42,6 +42,19 @@
             background-color: #f9fafb; /* A light background for logos that might be transparent */
             padding: 1rem; /* Add some padding around the image */
         }
+        /* Center the last 3 cards on large screens */
+        .second-row-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        @media (min-width: 1024px) {
+            .product-card-5, .product-card-6, .product-card-7 {
+                flex: 0 0 auto;
+                width: 300px;
+            }
+        }
     </style>
 </head>
 <body class="text-gray-800">
@@ -58,7 +71,7 @@
             </p>
         </header>
 
-        <!-- Products Grid --><main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 justify-items-center lg:justify-items-start">
+        <!-- Products Grid --><main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-10">
 
             <!-- Product Card 1: WakeMeAfter --><div class="rounded-xl p-6 flex flex-col glass-card">
                 <img src="wakemeafter-icon.webp" alt="WakeMeAfter App Logo" class="w-full h-48 rounded-lg mb-4 product-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/4f46e5/ffffff?text=W';">
@@ -107,46 +120,43 @@
                 </div>
                 <a href="https://www.instagram.com/the.she.talks" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 mt-auto">View on Instagram</a>
             </div>
-            
-            <!-- Second Row - Centered --><div class="lg:col-span-4 flex justify-start lg:justify-center">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 max-w-5xl" style="margin-left: 200px;">
-            
-            <!-- Product Card 5: Poke - Reduce Screen Time --><div class="rounded-xl p-6 flex flex-col glass-card">
-                <img src="poke.webp" alt="Poke App Icon" class="w-full h-48 rounded-lg mb-4 product-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ffffff/333333?text=POKE';">
-                <h2 class="text-2xl font-bold mb-1">Poke - Reduce Screen Time</h2>
-                <p class="text-gray-700 flex-grow mb-4">A fun and effective app to help you reduce your screen time and improve your digital wellbeing.</p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Mobile App</span>
-                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Digital Wellbeing</span>
-                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">iOS</span>
+
+            <!-- Second Row - Centered Container -->
+            <div class="lg:col-span-4 second-row-container">
+                <!-- Product Card 5: Meetily --><div class="rounded-xl p-6 flex flex-col glass-card product-card-5">
+                    <img src="meetily.webp" alt="Meetily Logo" class="w-full h-32 rounded-lg mb-4 product-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ffffff/333333?text=meetily';">
+                    <h2 class="text-2xl font-bold mb-1">Meetily</h2>
+                    <p class="text-gray-700 flex-grow mb-4">Your AI assistant for meeting notes, summaries, and transcripts. Never take meeting notes again.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">AI/ML</span>
+                        <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Productivity</span>
+                        <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">SaaS</span>
+                    </div>
+                    <a href="https://meetily.zackriya.com" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 mt-auto">Visit Site</a>
                 </div>
-                <a href="https://apps.apple.com/in/app/poke-reduce-screen-time/id6745727640" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-lime-600 hover:bg-lime-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 mt-auto">View on App Store</a>
-            </div>
-            
-            <!-- Product Card 6: Meetily --><div class="rounded-xl p-6 flex flex-col glass-card">
-                <img src="meetily.webp" alt="Meetily Logo" class="w-full h-32 rounded-lg mb-4 product-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ffffff/333333?text=meetily';">
-                <h2 class="text-2xl font-bold mb-1">Meetily</h2>
-                <p class="text-gray-700 flex-grow mb-4">Your AI assistant for meeting notes, summaries, and transcripts. Never take meeting notes again.</p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">AI/ML</span>
-                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Productivity</span>
-                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">SaaS</span>
+                
+                <!-- Product Card 6: Poke - Reduce Screen Time --><div class="rounded-xl p-6 flex flex-col glass-card product-card-6">
+                    <img src="poke.webp" alt="Poke App Icon" class="w-full h-48 rounded-lg mb-4 product-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ffffff/333333?text=POKE';">
+                    <h2 class="text-2xl font-bold mb-1">Poke - Reduce Screen Time</h2>
+                    <p class="text-gray-700 flex-grow mb-4">A fun and effective app to help you reduce your screen time and improve your digital wellbeing.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Mobile App</span>
+                        <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Digital Wellbeing</span>
+                        <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">iOS</span>
+                    </div>
+                    <a href="https://apps.apple.com/in/app/poke-reduce-screen-time/id6745727640" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-lime-600 hover:bg-lime-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 mt-auto">View on App Store</a>
                 </div>
-                <a href="https://meetily.zackriya.com" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 mt-auto">Visit Site</a>
-            </div>
-            
-            <!-- Product Card 7: Deepwork --><div class="rounded-xl p-6 flex flex-col glass-card">
-                <img src="dpwrk.webp" alt="DPWRK Logo" class="w-full h-32 rounded-lg mb-4 product-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/3b82f6/ffffff?text=DPWRK';">
-                <h2 class="text-2xl font-bold mb-1">Deepwork</h2>
-                <p class="text-gray-700 flex-grow mb-4">Your personal AI focus coach that helps you stay focused and productive with AI-powered sessions.</p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">AI/ML</span>
-                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Productivity</span>
-                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">SaaS</span>
-                </div>
-                <a href="https://www.dpwrk.app" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 mt-auto">Visit Site</a>
-            </div>
-            
+                
+                <!-- Product Card 7: Deepwork --><div class="rounded-xl p-6 flex flex-col glass-card product-card-7">
+                    <img src="dpwrk.webp" alt="DPWRK Logo" class="w-full h-32 rounded-lg mb-4 product-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/3b82f6/ffffff?text=DPWRK';">
+                    <h2 class="text-2xl font-bold mb-1">Deepwork</h2>
+                    <p class="text-gray-700 flex-grow mb-4">Your personal AI focus coach that helps you stay focused and productive with AI-powered sessions.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">AI/ML</span>
+                        <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Productivity</span>
+                        <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">SaaS</span>
+                    </div>
+                    <a href="https://www.dpwrk.app" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 mt-auto">Visit Site</a>
                 </div>
             </div>
 
