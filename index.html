@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPH Hackathon: Shortlisted Products</title>
+    
+    <!-- Tailwind CSS CDN --><script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter --><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles --><style>
+        body {
+            /* Using the Inter font with a standard system fallback */
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            /* A subtle background pattern to make the glass effect visible */
+            background-color: #f4f6f9;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)),
+                radial-gradient(circle at top left, #4f46e51a, transparent 40%),
+                radial-gradient(circle at bottom right, #ec48991a, transparent 40%);
+            color: #1f2937; /* Standard dark color for all primary text */
+        }
+        .glass-card {
+            background: rgba(239, 246, 255, 0.9);
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(191, 219, 254, 0.5);
+            transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .glass-card:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .product-image {
+            object-fit: contain; /* Ensures the whole logo/interface is visible */
+            background-color: #f9fafb; /* A light background for logos that might be transparent */
+            padding: 1rem; /* Add some padding around the image */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Container --><div class="container mx-auto px-6 py-12 md:px-12">
+
+        <!-- Header Section --><header class="text-center mb-12 md:mb-16">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-black">
+                KPH Hackathon
+            </h1>
+            <p class="mt-2 text-2xl md:text-4xl font-bold">Shortlisted Products Showcase</p>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                Discover the innovative solutions and groundbreaking ideas that made it to the final round.
+            </p>
+        </header>
+
+        <!-- Products Grid --><main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 justify-items-center lg:justify-items-start">
+
+            <!-- Product Card 1: WakeMeAfter --><div class="rounded-xl p-6 flex flex-col glass-card">
+                <img src="wakemeafter-icon.webp" alt="WakeMeAfter App Logo" class="w-full h-48 rounded-lg mb-4 product-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/4f46e5/ffffff?text=W';">
+                <h2 class="text-2xl font-bold mb-1">WakeMeAfter</h2>
+                <p class="text-gray-700 flex-grow mb-4">A smart alarm that only turns off when you're out of bed, ensuring you never oversleep again.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Mobile App</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Productivity</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Utilities</span>
+                </div>
+                <a href="https://www.wakemeafter.com/" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 mt-auto">Visit Site</a>
+            </div>
+
+            <!-- Product Card 2: ScreenScript --><div class="rounded-xl p-6 flex flex-col glass-card">
+                <img src="screen script.webp" alt="ScreenScript Logo" class="w-full h-48 rounded-lg mb-4 product-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ffd700/000000?text=Screen+Script';">
+                <h2 class="text-2xl font-bold mb-1">ScreenScript</h2>
+                <p class="text-gray-700 flex-grow mb-4">Fast, private, and secure offline transcription for your screen recordings and videos.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">AI/ML</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Productivity</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Video Tools</span>
+                </div>
+                <a href="https://screenscript.app" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 mt-auto">Visit Site</a>
+            </div>
+
+            <!-- Product Card 3: DesignLumo --><div class="rounded-xl p-6 flex flex-col glass-card">
+                <img src="designlumo.webp" alt="DesignLumo Logo" class="w-full h-48 rounded-lg mb-4 product-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/8b5cf6/ffffff?text=DesignLumo';">
+                <h2 class="text-2xl font-bold mb-1">DesignLumo</h2>
+                <p class="text-gray-700 flex-grow mb-4">The ultimate mockup generator. Create stunning product mockups in seconds for design and marketing.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Design</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">SaaS</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Marketing</span>
+                </div>
+                <a href="https://designlumo.com" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 mt-auto">Visit Site</a>
+            </div>
+
+            <!-- Product Card 4: The She Talks --><div class="rounded-xl p-6 flex flex-col glass-card">
+                <img src="the she talks.webp" alt="The She Talks Logo" class="w-full h-48 rounded-lg mb-4 product-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ff7f7f/ffffff?text=The+She+Talks';">
+                <h2 class="text-2xl font-bold mb-1">The She Talks</h2>
+                <p class="text-gray-700 flex-grow mb-4">A supportive community for women to share their stories, experiences, and empower each other.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Community</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Social</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Empowerment</span>
+                </div>
+                <a href="https://www.instagram.com/the.she.talks" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 mt-auto">View on Instagram</a>
+            </div>
+            
+            <!-- Second Row - Centered --><div class="lg:col-span-4 flex justify-start lg:justify-center">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 max-w-5xl" style="margin-left: 200px;">
+            
+            <!-- Product Card 5: Poke - Reduce Screen Time --><div class="rounded-xl p-6 flex flex-col glass-card">
+                <img src="poke.webp" alt="Poke App Icon" class="w-full h-48 rounded-lg mb-4 product-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ffffff/333333?text=POKE';">
+                <h2 class="text-2xl font-bold mb-1">Poke - Reduce Screen Time</h2>
+                <p class="text-gray-700 flex-grow mb-4">A fun and effective app to help you reduce your screen time and improve your digital wellbeing.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Mobile App</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Digital Wellbeing</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">iOS</span>
+                </div>
+                <a href="https://apps.apple.com/in/app/poke-reduce-screen-time/id6745727640" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-lime-600 hover:bg-lime-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 mt-auto">View on App Store</a>
+            </div>
+            
+            <!-- Product Card 6: Meetily --><div class="rounded-xl p-6 flex flex-col glass-card">
+                <img src="meetily.webp" alt="Meetily Logo" class="w-full h-32 rounded-lg mb-4 product-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ffffff/333333?text=meetily';">
+                <h2 class="text-2xl font-bold mb-1">Meetily</h2>
+                <p class="text-gray-700 flex-grow mb-4">Your AI assistant for meeting notes, summaries, and transcripts. Never take meeting notes again.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">AI/ML</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Productivity</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">SaaS</span>
+                </div>
+                <a href="https://meetily.zackriya.com" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 mt-auto">Visit Site</a>
+            </div>
+            
+            <!-- Product Card 7: Deepwork --><div class="rounded-xl p-6 flex flex-col glass-card">
+                <img src="dpwrk.webp" alt="DPWRK Logo" class="w-full h-32 rounded-lg mb-4 product-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/3b82f6/ffffff?text=DPWRK';">
+                <h2 class="text-2xl font-bold mb-1">Deepwork</h2>
+                <p class="text-gray-700 flex-grow mb-4">Your personal AI focus coach that helps you stay focused and productive with AI-powered sessions.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">AI/ML</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Productivity</span>
+                    <span class="bg-gray-200 text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">SaaS</span>
+                </div>
+                <a href="https://www.dpwrk.app" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 mt-auto">Visit Site</a>
+            </div>
+            
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Footer --><footer class="text-center mt-16 text-gray-500">
+            <p>&copy; 2025 KPH Hackathon. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
